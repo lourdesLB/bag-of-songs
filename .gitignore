@@ -1,0 +1,12 @@
+# Ignorar todos los archivos CSV
+**/*.csv
+
+# Ignorar todos los archivos PNG y jpg
+**/*.jpg
+**/*.png
+
+# Ignorar todos los archivos WAV
+**/*.wav
+
+# Ignorar ficheros zip
+**/*.zip
