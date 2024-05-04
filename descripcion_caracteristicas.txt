@@ -1,0 +1,28 @@
+Para procesar nuestro dataset una vez ya cargado deberemos de realizar 3 pasos distintos:
+
+1. **Anotaciones:** Generaremos un csv que nos servirá para identificar la clase de cada una de las entradas, lo que facilitará su posterior estudio y entrenamiento.
+
+2. **Características:** Crearemos otro csv con características extraídas de cada una de las muestras de audio, necesarias para el entrenamiento de modelos de etapas posteriores. Diferenciamos características extraídas del dominio temporal y del frecuencial, que pasamos a detallar a continuación:
+
+- Dominio temporal:
+    - **Amplitude Envelope:** Esta característica mide la envolvente de amplitud de la señal de audio, que es una curva suave que representa la variación máxima de la amplitud del audio en el tiempo. Puede ayudar a identificar la forma de la señal, capturando cómo el nivel de sonido cambia a lo largo de una grabación.
+
+    - **Root Mean Square (RMS):** El RMS es una medida de la potencia promedio de la señal de audio. Es efectiva para estimar la "fuerza" o energía de la señal en diferentes puntos en el tiempo, lo cual puede ser útil para tareas como la detección de silencios o la estimación de la dinámica de la señal.
+
+    - **Zero Crossing Rate (ZCR):** La tasa de cruces por cero mide cuántas veces la señal de audio cruza el eje horizontal, es decir, cuántas veces la amplitud pasa de positiva a negativa y viceversa. Esta característica es útil para identificar la naturaleza percusiva de los sonidos y es comúnmente utilizada en la clasificación de géneros musicales y la detección de ritmo.
+
+- Dominio frecuencial:
+    - **Band Energy Ratio (BER):** Esta característica calcula la relación entre la energía en dos bandas de frecuencia divididas en un umbral específico. Sirve para medir cómo se distribuye la energía entre los bajos y los altos en una señal de audio, proporcionando una idea clara sobre la presencia de tonos graves frente a agudos.
+
+    - **Spectral Centroid:** El centroide espectral indica el "centro de gravedad" del espectro de frecuencias de una señal. Altos valores sugieren sonidos con presencia de altas frecuencias, mientras que bajos valores indican sonidos más graves. Es útil para caracterizar texturas sonoras.
+
+    - **Spectral Bandwidth:** La banda espectral mide la dispersión del espectro alrededor del centroide espectral. Una banda ancha sugiere un sonido más complejo o con ruido, mientras que una banda estrecha indica un sonido más tonal o puro.
+
+    - **Chroma STFT:** Esta característica extrae el cromagrama de la señal usando la transformada de Fourier de tiempo corto. Los cromagramas representan la intensidad de las diferentes clases de tonos en la música, útiles para el análisis armónico y la identificación de acordes.
+
+    - **Spectral Rolloff:** El rolloff espectral es la frecuencia por debajo de la cual se encuentra un cierto porcentaje de la energía del espectro (comúnmente el 85%). Es una buena medida para determinar el límite superior de las frecuencias presentes en la señal.
+
+    - **Mel-Frequency Cepstral Coefficients (MFCC):** Los MFCC son coeficientes que representan el espectro de frecuencias de una señal en la escala Mel, que aproxima mejor la percepción auditiva humana. Son muy populares en el procesamiento del habla y reconocimiento de audio porque capturan las características básicas del timbre y la textura del sonido.
+
+
+3. **Audios:** Almacenaremos los archivos de audios en formato wav, lo que permitirá su carga de manera sencilla en el futuro para visualizaciones y tratamiento de los mismos.
