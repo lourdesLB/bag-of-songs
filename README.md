@@ -18,6 +18,9 @@ La estructura del proyecto es la siguiente:
     2-features-explanaition.ipynb
     3-models-prediction.ipynb
 /presentacion
+    presentacion_aine_PabloRJ_MLourdesLB.pptx
+    presentacion_aine_PabloRJ_MLourdesLB.pdf
+    ...
 ````
 
 * Carpeta `codigo_y_memoria`: la primera carpeta `/codigo_y_memoria` contiene el código/memoria en los notebooks, la carpeta `/img` con imágenes incrustadas en el notebook). Las carpetas `/ccmusic` y `/ccmusic2` contienen los conjuntos de datos (se generan durante la ejecución del código) pero que no hemos podido subir a enseñanza virtual debido al tamaño del dataset. Adjuntamos link a un directorio en Drive donde puede descargar los conjuntos de datos si son de su interés [https://drive.google.com/drive/folders/1buh9Ty8DT-JFU9RwjsvYYH-_2OYxgQ1r?usp=sharing](https://drive.google.com/drive/folders/1buh9Ty8DT-JFU9RwjsvYYH-_2OYxgQ1r?usp=sharing)
