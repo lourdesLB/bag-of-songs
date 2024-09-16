@@ -9,8 +9,8 @@ El proyecto "Bag of Songs: Extracción de Características en Señales de Audio"
 Mediante la utilización de un enfoque estructurado, se analizan los dominios frecuencial y temporal de piezas musicales, para generar un conjunto de datos que permita entrenar "modelos verdes" que puedan diferenciar efectivamente entre diversos tipos de música sin un coste computacional alto. Presentándose como principal alternativa frente al análisis de audio basado en el uso de espectogramas y CNNs, este enfoque combinando *feature extraction* junto con MLP o modelos de ML clásicos (SVM o RF) muestra una eficiencia elevada sin incurrir en los altos costes computacionales derivados de la alternativa existente. 
 
 Proyecto desarrollado por:
-- María Lourdes Linares Barrera  
-- Pablo Reina Jiménez  
+- María Lourdes Linares Barrera - https://github.com/lourdesLB
+- Pablo Reina Jiménez - https://github.com/preinaj
 
 ## Estructura del proyecto y uso
 
